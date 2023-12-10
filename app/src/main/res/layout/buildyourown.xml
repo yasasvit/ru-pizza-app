@@ -106,39 +106,33 @@
         android:id="@+id/selectedToppings"
         android:layout_width="180dp"
         android:layout_height="188dp"
+        android:choiceMode="singleChoice"
         android:translationX="200dp"
-        android:translationY="-240dp"
-        android:choiceMode="singleChoice" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:translationY="-217dp" />
 
     <Button
         android:id="@+id/orderButton"
         android:layout_width="124dp"
         android:layout_height="48dp"
         android:text="@string/place_order1"
-        android:translationX="230dp"
-        android:translationY="-190dp" />
+        android:translationX="250dp"
+        android:translationY="-70dp" />
 
     <Button
         android:id="@+id/removeButton"
         android:layout_width="wrap_content"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:text="@string/remove_topping"
         android:translationX="220dp"
-        android:translationY="-280dp" />
+        android:translationY="-240dp" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="145dp"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:text="@string/add_topping"
         android:translationX="5dp"
-        android:translationY="-320dp" />
+        android:translationY="-290dp" />
 
     <ListView
         android:id="@+id/allToppings"
@@ -148,6 +142,26 @@
         android:translationY="-550dp"
         android:choiceMode="singleChoice" />
 
+    <EditText
+        android:id="@+id/PriceValue"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/n_a"
+        android:translationX="100dp"
+        android:translationY="-400dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:text="@string/price"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationX="10dp"
+        android:translationY="-440dp" />
 
 
 </LinearLayout>
