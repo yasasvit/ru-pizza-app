@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:ignore="ExtraText">
 
 
     <ImageView
         android:id="@id/imageView"
-        android:layout_width="193dp"
-        android:layout_height="193dp"
+        android:layout_width="189dp"
+        android:layout_height="128dp"
         android:rotation="0"
         android:rotationX="0"
         android:rotationY="0"
@@ -30,8 +30,8 @@
 
     <ImageView
         android:id="@id/imageView"
-        android:layout_width="195dp"
-        android:layout_height="183dp"
+        android:layout_width="196dp"
+        android:layout_height="123dp"
         android:src="@drawable/custom_pizza"
         android:translationX="100dp" />
 
@@ -44,8 +44,8 @@
 
     <ImageView
         android:id="@id/imageView"
-        android:layout_width="183dp"
-        android:layout_height="128dp"
+        android:layout_width="200dp"
+        android:layout_height="117dp"
         android:src="@drawable/shopping_cart"
         android:translationX="100dp" />
 
@@ -58,8 +58,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="132dp"
+        android:layout_width="193dp"
+        android:layout_height="128dp"
         android:src="@drawable/store_orders"
         android:translationX="100dp" />
 
@@ -69,4 +69,4 @@
         android:layout_height="wrap_content"
         android:text="Store Orders"
         android:translationX="50dp" />
-    </LinearLayout>
+</LinearLayout>
