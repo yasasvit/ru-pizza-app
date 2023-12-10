@@ -4,4 +4,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:text="@string/specialty_pizzas2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:translationX="10dp"
+        android:translationY="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="401dp"
+        android:layout_height="297dp"
+
+        android:translationX="5dp"
+        android:translationY="40dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:text="@string/tomato_sauce"
+        android:translationX="200dp"
+        android:translationY="130dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:text="@string/alfredo_sauce"
+        android:translationX="200dp"
+        android:translationY="130dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_order2"
+        android:translationY="350dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationX="5dp"
+        android:translationY="250dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/n_a"
+        android:translationX="100dp"
+        android:translationY="210dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_size1"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:translationX="10dp"
+        android:translationY="-120dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_sauce"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:translationX="210dp"
+        android:translationY="-140dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/additional_options"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:translationX="5dp"
+        android:translationY="-50dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:text="@string/extra_cheese"
+        android:translationX="5dp"
+        android:translationY="-50dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:text="@string/extra_sauce"
+        android:translationX="5dp"
+        android:translationY="-50dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:translationX="5dp"
+        android:translationY="-250dp" />
+
 </LinearLayout>
