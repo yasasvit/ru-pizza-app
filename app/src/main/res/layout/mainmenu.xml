@@ -22,10 +22,10 @@
         tools:ignore="DuplicateIds" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/specialtyPizzasButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/specialty_pizzas1"
+        android:text="Specialty Pizzas"
         android:translationX="50dp" />
 
     <ImageView
@@ -36,10 +36,10 @@
         android:translationX="100dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/byoButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/build_pizza"
+        android:text="Build Your Own Pizza"
         android:translationX="50dp" />
 
     <ImageView
@@ -50,10 +50,10 @@
         android:translationX="100dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/currentOrderButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/current_order1"
+        android:text="Current Orders"
         android:translationX="50dp" />
 
     <ImageView
@@ -64,9 +64,9 @@
         android:translationX="100dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/storeOrdersButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/store_orders1"
+        android:text="Store Orders"
         android:translationX="50dp" />
     </LinearLayout>
