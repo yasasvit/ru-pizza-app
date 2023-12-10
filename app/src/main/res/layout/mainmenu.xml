@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="193dp"
+        android:layout_height="193dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/specialty_pizzas"
+        android:translationX="100dp"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/specialty_pizzas1"
+        android:translationX="50dp" />
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="183dp"
+        android:src="@drawable/custom_pizza"
+        android:translationX="100dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/build_pizza"
+        android:translationX="50dp" />
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="183dp"
+        android:layout_height="128dp"
+        android:src="@drawable/shopping_cart"
+        android:translationX="100dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/current_order1"
+        android:translationX="50dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="132dp"
+        android:src="@drawable/store_orders"
+        android:translationX="100dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/store_orders1"
+        android:translationX="50dp" />
+    </LinearLayout>
