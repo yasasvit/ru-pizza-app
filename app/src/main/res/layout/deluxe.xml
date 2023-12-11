@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Deluxe" />
+            android:text="@string/deluxe" />
 
         <TextView
             android:id="@+id/textViewPizzaPrice"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:paddingTop="4dp"
-            android:text="$14.99" />
+            android:text="@string/_14_99" />
 
         <TextView
             android:id="@+id/textViewSauce"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:paddingTop="4dp"
-            android:text="Sauce: Tomato" />
+            android:text="@string/sauce_tomato" />
 
         <TextView
             android:id="@+id/textViewToppings"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:paddingTop="4dp"
-            android:text="Toppings: Sausage, pepperoni, green pepper, onion, mushroom" />
+            android:text="@string/toppings_sausage_pepperoni_green_pepper_onion_mushroom" />
 
     </LinearLayout>
 </LinearLayout>
