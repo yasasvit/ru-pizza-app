@@ -18,6 +18,10 @@ import android.app.AlertDialog;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/*
+* This class manages the android screen and the pizza ordering app
+* @authors Pranav Gummaluri, Yasasvi Tallapaneni
+*/
 public class BuildYourOwnActivity extends ComponentActivity {
     private PizzaOrderService pizzaOrderService = PizzaOrderService.getInstance();
 
@@ -36,6 +40,9 @@ public class BuildYourOwnActivity extends ComponentActivity {
     private CheckBox extraSauceCheckbox;
     private TextView priceTextField;
 
+    /*
+    * This method initializes all the attributes of the android screen 
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,6 +98,9 @@ public class BuildYourOwnActivity extends ComponentActivity {
         orderButton.setOnClickListener(v -> placeOrder());
     }
 
+    /*
+    * This method sets listeners for various UI elements
+    */
     private void setListeners() {
         sizeSpinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
             @Override
@@ -134,6 +144,10 @@ public class BuildYourOwnActivity extends ComponentActivity {
             updatePrice();
         });
     }
+
+    /*
+    * This method updates the displayed price based on user selections
+    */
     private void updatePrice() {
         double basePrice;
 
@@ -168,6 +182,9 @@ public class BuildYourOwnActivity extends ComponentActivity {
     }
 
 
+    /*
+    * This method adds a selected topping to the pizza
+    */
     private void addTopping() {
         if (selectedToppingsAdapter.getCount() >= MAX_TOPPINGS) {
             showAlert("Maximum toppings reached!");
@@ -182,6 +199,10 @@ public class BuildYourOwnActivity extends ComponentActivity {
         }
     }
 
+    
+    /*
+    * This method removes a selected topping to the pizza
+    */
     private void removeTopping() {
         if (selectedToppingsAdapter.getCount() <= MIN_TOPPINGS) {
             showAlert("At least 3 toppings required!");
@@ -196,6 +217,9 @@ public class BuildYourOwnActivity extends ComponentActivity {
         }
     }
 
+    /*
+    * This method places an order for the configured pizza
+    */
     private void placeOrder() {
         String selectedSize = sizeSpinner.getSelectedItem().toString();
         String selectedSauce = tomatoButton.isChecked() ? "tomato" : (alfredoButton.isChecked() ? "alfredo" : null);
@@ -230,6 +254,10 @@ public class BuildYourOwnActivity extends ComponentActivity {
         Toast.makeText(this, "Pizza added!", Toast.LENGTH_SHORT).show();
     }
 
+    /*
+    * This method shows an alert dialog with the given message
+    * @param String message representing the message the alert box will show
+    */
     private void showAlert(String message) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage(message)
