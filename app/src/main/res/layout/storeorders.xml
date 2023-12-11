@@ -26,7 +26,7 @@
         android:translationY="50dp" />
 
     <Spinner
-        android:id="@+id/orderNumberSpinner"
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:translationY="50dp" />
@@ -43,7 +43,7 @@
         android:translationY="100dp" />
 
     <EditText
-        android:id="@+id/subtotalField"
+        android:id="@+id/editTextText"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -64,18 +64,26 @@
         android:translationY="130dp" />
 
     <ListView
-        android:id="@+id/pizzaList"
         android:layout_width="match_parent"
-        android:layout_height="281dp"
+        android:layout_height="381dp"
         android:translationY="130dp" />
 
     <Button
-        android:id="@+id/removePizzaButton"
+        android:id="@+id/button6"
         android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:text="@string/remove_order"
         android:translationX="10dp"
         android:translationY="150dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:text="@string/export_orders"
+        android:translationX="210dp"
+        android:translationY="100dp" />
+
 
 
 </LinearLayout>
