@@ -14,6 +14,10 @@ import androidx.activity.ComponentActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* This class allows users to view the current order, remove selected pizzas, and place orders
+* @authors Pranav Gummaluri, Yasasvi Tallapaneni
+*/
 public class CurrentOrderActivity extends ComponentActivity {
     private StoreOrders storeOrders = StoreOrders.getInstance();
     private PizzaOrderService pizzaOrderService = PizzaOrderService.getInstance();
