@@ -37,14 +37,12 @@ public class PizzaAdapter extends RecyclerView.Adapter<PizzaAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pizza pizza = pizzaList.get(position);
 
-        // Set the values for each view in the ViewHolder
         holder.textViewPizzaName.setText(pizza.getName());
         String formattedPrice = String.format("$%.2f", pizza.price());
         holder.textViewPizzaPrice.setText(formattedPrice);
         holder.textViewSauce.setText("Sauce: " + pizza.getSauce());
         holder.textViewToppings.setText("Toppings: " + pizza.getToppings());
 
-        // Set the image using your preferred image loading library or method
         holder.imageViewPizza.setImageResource(getImageResourceId(pizza.getName()));
     }
 

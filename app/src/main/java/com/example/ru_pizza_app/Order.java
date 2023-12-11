@@ -49,7 +49,6 @@ public class Order {
      * @return double which represents the total price of the order
      */
     public double getTotalOrderPrice() {
-        // NEED TO INCLUDE TAX LATER TO PRICE
         double totalPrice = 0.0;
         for (Pizza pizza : pizzas) {
             totalPrice += pizza.price();

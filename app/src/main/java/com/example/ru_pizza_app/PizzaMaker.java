@@ -20,6 +20,8 @@ public class PizzaMaker {
      */
     public static Pizza createPizza(String pizzaType, Size size, Sauce sauce, ArrayList<Topping> toppings, boolean extraSauce, boolean extraCheese) {
         switch (pizzaType.toLowerCase()) {
+            case "buildyourown":
+                return new BuildYourOwn(size, sauce, toppings, extraSauce, extraCheese);
             case "deluxe":
                 return new Deluxe(size, extraSauce, extraCheese);
             case "supreme":
@@ -30,8 +32,16 @@ public class PizzaMaker {
                 return new Seafood(size, extraSauce, extraCheese);
             case "pepperoni":
                 return new Pepperoni(size, extraSauce, extraCheese);
-            case "buildyourown":
-                return new BuildYourOwn(size, sauce, toppings, extraSauce, extraCheese);
+            case "cheese":
+                return new Cheese(size, extraSauce, extraCheese);
+            case "beefy":
+                return new Beefy(size, extraSauce, extraCheese);
+            case "detroit":
+                return new Detroit(size, extraSauce, extraCheese);
+            case "italiana":
+                return new Italiana(size, extraSauce, extraCheese);
+            case "veggie":
+                return new Veggie(size, extraSauce, extraCheese);
             default:
                 throw new IllegalArgumentException("Invalid pizza type: " + pizzaType);
         }

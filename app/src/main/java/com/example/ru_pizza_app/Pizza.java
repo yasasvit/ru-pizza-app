@@ -34,6 +34,23 @@ public abstract class Pizza {
 
         return toppingsString.toString();
     }
+    @Override
+    public String toString() {
+        StringBuilder pizzaDetails = new StringBuilder();
+        pizzaDetails.append("[")
+                .append(this.getClass().getSimpleName())
+                .append("] ")
+                .append(getToppings())
+                .append(" ")
+                .append(this.size)
+                .append(" ")
+                .append(this.extraSauce ? "extra sauce " : "")
+                .append(this.extraCheese ? "extra cheese " : "")
+                .append("$")
+                .append(String.format("%.2f", this.price()));
+
+        return pizzaDetails.toString();
+    }
 
 
 }

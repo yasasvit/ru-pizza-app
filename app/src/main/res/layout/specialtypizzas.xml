@@ -24,27 +24,11 @@
         android:translationX="5dp"
         android:translationY="40dp" />
 
-    <RadioButton
-        android:id="@+id/tomatoButton"
-        android:layout_width="166dp"
-        android:layout_height="48dp"
-        android:text="@string/tomato_sauce"
-        android:translationX="200dp"
-        android:translationY="130dp" />
-
-    <RadioButton
-        android:id="@+id/alfredoButton"
-        android:layout_width="166dp"
-        android:layout_height="48dp"
-        android:text="@string/alfredo_sauce"
-        android:translationX="200dp"
-        android:translationY="130dp" />
-
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/place_order2"
+        android:text="Add to Order"
         android:translationY="275dp" />
 
     <TextView
@@ -59,7 +43,7 @@
         android:translationY="200dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/subtotalField"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -77,29 +61,18 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:translationX="10dp"
-        android:translationY="-180dp" />
+        android:translationY="-90dp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView12"
         android:layout_width="111dp"
         android:layout_height="wrap_content"
         android:text="@string/select_size1"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:translationX="10dp"
-        android:translationY="-120dp" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="112dp"
-        android:layout_height="wrap_content"
-        android:text="@string/select_sauce"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:translationX="210dp"
-        android:translationY="-140dp" />
+        android:translationX="200dp"
+        android:translationY="-110dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -130,17 +103,17 @@
         android:translationY="-50dp" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinnerSizes"
         android:layout_width="158dp"
         android:layout_height="48dp"
-        android:translationX="5dp"
-        android:translationY="-250dp" />
+        android:translationX="200dp"
+        android:translationY="-230dp" />
 
     <Spinner
         android:id="@+id/spinnerPizzaTypes"
         android:layout_width="158dp"
         android:layout_height="48dp"
         android:translationX="5dp"
-        android:translationY="-390dp" />
+        android:translationY="-280dp" />
 
 </LinearLayout>
