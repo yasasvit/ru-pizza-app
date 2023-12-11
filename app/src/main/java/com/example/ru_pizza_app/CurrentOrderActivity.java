@@ -24,6 +24,9 @@ public class CurrentOrderActivity extends ComponentActivity {
     private TextView totalField;
 
 
+    /*
+    * This method initializes all the app's attributes
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +58,9 @@ public class CurrentOrderActivity extends ComponentActivity {
         });
     }
 
+    /*
+    * This method updates the displayed price details based on the current order
+    */ 
     private void updatePriceFields() {
         double currentTotalPrice = pizzaOrderService.getCurrentOrder().getTotalOrderPrice();
         double njTax = 0.06625;
@@ -65,6 +71,10 @@ public class CurrentOrderActivity extends ComponentActivity {
         salesTaxField.setText(String.format("%.2f", salesTax));
         totalField.setText(String.format("%.2f", totalPriceWithTax));
     }
+
+    /*
+    * This method updates the list view with the current pizzas in the order
+    */ 
     private void updateOrderListView() {
         List<Pizza> pizzas = pizzaOrderService.getCurrentOrder().getPizzas();
         List<String> pizzaStrings = new ArrayList<>();
@@ -77,6 +87,9 @@ public class CurrentOrderActivity extends ComponentActivity {
         orderListView.setAdapter(adapter);
     }
 
+    /*
+    * This method removes a selected pizza from the current order
+    */
     private void removePizza() {
         int selectedIndex = orderListView.getCheckedItemPosition();
 
@@ -90,6 +103,9 @@ public class CurrentOrderActivity extends ComponentActivity {
         }
     }
 
+    /*
+    * This method places the current order, adding it to the store orders
+    */
     private void placeOrder() {
         Order currentOrder = pizzaOrderService.getCurrentOrder();
 
@@ -107,6 +123,11 @@ public class CurrentOrderActivity extends ComponentActivity {
         Toast.makeText(this, "Order placed!", Toast.LENGTH_SHORT).show();
 
     }
+    
+    /*
+    * This method displays an alert dialog with a given message
+    * @param String message representing the specified alert message
+    */
     private void showAlert(String message) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage(message)
