@@ -114,7 +114,7 @@
         android:id="@+id/orderButton"
         android:layout_width="124dp"
         android:layout_height="48dp"
-        android:text="Add to Order"
+        android:text="@string/add_to_order1"
         android:translationX="250dp"
         android:translationY="-170dp" />
 
