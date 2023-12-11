@@ -6,7 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import androidx.activity.ComponentActivity;
 
+/*
+* This class displays the main page, showing the main menu of the pizza ordering application
+* @authors Yasasvi Tallapaneni, Pranav Gummaluri
+*/
 public class MainActivity extends ComponentActivity {
+    
+    /*
+    * This method initializes the activity when it is created
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
