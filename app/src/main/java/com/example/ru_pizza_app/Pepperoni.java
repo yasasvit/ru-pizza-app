@@ -39,10 +39,20 @@ public class Pepperoni extends Pizza{
         }
         return basePrice;
     }
+
+    /*
+    * A getter method for the name of the pizza
+    * @return a string representing pizza type
+    */
     @Override
     public String getName() {
         return "Pepperoni";
     }
+
+    /*
+    * A getter method for the sauce of the pizza
+    * @return a string representing sauce type
+    */
     @Override
     public String getSauce(){
         return "Tomato";
