@@ -43,11 +43,19 @@ public class BuildYourOwn extends Pizza {
         return basePrice;
     }
 
+    /**
+    * This method is a getter for a sauce object
+    * @return a String which represents the sauce of optioned pizza
+    */
     @Override
     public String getSauce() {
         return null;
     }
 
+    /**
+    * This method is a getter for a name object
+    * @return a String which represents the name of the pizza
+    */
     @Override
     public String getName() {
         return null;
