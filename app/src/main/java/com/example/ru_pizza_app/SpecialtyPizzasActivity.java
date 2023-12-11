@@ -16,6 +16,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* This class displays a list of specialty pizzas using a RecyclerView
+* @authors Pranav Gummaluri, Yasasvi Tallapaneni
+*/
 public class SpecialtyPizzasActivity extends ComponentActivity {
     private PizzaOrderService pizzaOrderService = PizzaOrderService.getInstance();
     private static final int MIN_TOPPINGS = 3;
@@ -26,6 +30,9 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
     private CheckBox extraSauceCheckbox;
     private TextView priceTextView;
 
+    /*
+    * This method initializes the RecyclerView and sets its layout manager
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +70,9 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
         setListeners();
     }
 
+    /*
+    * This method sets OnItemSelectedListener so the spinners update the price when selections change
+    */
     private void setListeners() {
         sizesSpinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
             @Override
@@ -94,6 +104,9 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
         orderButton.setOnClickListener(v -> placeOrder());
     }
 
+    /*
+    * This method creates a Pizza object based on user selections and adds it to the order
+    */
     private void placeOrder() {
         String selectedSize = sizesSpinner.getSelectedItem().toString();
 
@@ -113,6 +126,9 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
 
     }
 
+    /*
+    * This method calculates and updates the displayed price based on user selections
+    */
     private void updatePrice() {
         double basePrice;
         switch (pizzaTypesSpinner.getSelectedItem().toString()) {
@@ -167,6 +183,9 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
         priceTextView.setText(String.format("$%.2f", basePrice));
     }
 
+    /*
+    * This method creates a list of specialty pizzas to be displayed in the RecyclerView
+    */
     private List<Pizza> createSpecialtyPizzas() {
         List<Pizza> specialtyPizzas = new ArrayList<>();
 
@@ -184,6 +203,10 @@ public class SpecialtyPizzasActivity extends ComponentActivity {
         return specialtyPizzas;
     }
 
+    /*
+    * This method Displays an alert dialog with the provided message
+    * @param message representing the message to be displayed
+    */
     private void showAlert(String message) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage(message)
