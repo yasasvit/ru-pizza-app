@@ -15,6 +15,10 @@ import androidx.activity.ComponentActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* This class is an Android ComponentActivity that represents the screen where store orders are managed
+* @authors Yasasvi Tallapaneni, Pranav Gummaluri
+*/
 public class StoreOrdersActivity extends ComponentActivity {
     private StoreOrders storeOrders = StoreOrders.getInstance();
 
@@ -23,6 +27,9 @@ public class StoreOrdersActivity extends ComponentActivity {
     private ListView pizzaList;
     private ArrayAdapter<Pizza> pizzaArrayAdapter;
 
+    /*
+    * This method initializes the activity, sets the layout, and configures UI components
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +70,9 @@ public class StoreOrdersActivity extends ComponentActivity {
         });
     }
 
+    /*
+    * This method updates the displayed order details based on the selected order number
+    */
     private void updateOrderDetails() {
         int selectedOrderNumber = (int) orderNumberSpinner.getSelectedItem();
 
@@ -83,6 +93,9 @@ public class StoreOrdersActivity extends ComponentActivity {
         }
     }
 
+    /*
+    * This method removes the selected order from the list of orders
+    */
     public void removeOrder() {
         if (orderNumberSpinner.getSelectedItem() == null) {
             showAlert("No Order Selected");
@@ -106,6 +119,9 @@ public class StoreOrdersActivity extends ComponentActivity {
         clearOrderDetails();
     }
 
+    /*
+    * This method updates the order numbers in the spinner based on the current state of storeOrders
+    */
     private void updateOrderNumbers() {
         List<Integer> orderNumbers = new ArrayList<>();
         for (Order order : storeOrders.getOrders()) {
@@ -116,10 +132,18 @@ public class StoreOrdersActivity extends ComponentActivity {
         orderNumberSpinner.setAdapter(spinnerAdapter);
     }
 
+    /*
+    * This method clears the displayed order details
+    */
     private void clearOrderDetails() {
         subtotalField.setText("");
         pizzaArrayAdapter.clear();
     }
+
+    /*
+    * This method displays an alert dialog with the provided message
+    * @param message representing the message to be displayed
+    */
     private void showAlert(String message) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage(message)
