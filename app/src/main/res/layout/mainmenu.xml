@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@id/imageView"
+        android:id="@id/SpecialPizzas"
         android:layout_width="189dp"
         android:layout_height="128dp"
         android:rotation="0"
@@ -25,11 +25,11 @@
         android:id="@+id/specialtyPizzasButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Specialty Pizzas"
+        android:text="@string/specialty_pizzas3"
         android:translationX="50dp" />
 
     <ImageView
-        android:id="@id/imageView"
+        android:id="@id/PizzaIngredients"
         android:layout_width="196dp"
         android:layout_height="123dp"
         android:src="@drawable/custom_pizza"
@@ -39,11 +39,11 @@
         android:id="@+id/byoButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Build Your Own Pizza"
+        android:text="@string/build_your_own"
         android:translationX="50dp" />
 
     <ImageView
-        android:id="@id/imageView"
+        android:id="@id/ShoppingCart"
         android:layout_width="200dp"
         android:layout_height="117dp"
         android:src="@drawable/shopping_cart"
@@ -53,11 +53,11 @@
         android:id="@+id/currentOrderButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Current Orders"
+        android:text="@string/current_orders"
         android:translationX="50dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/PizzaHouse"
         android:layout_width="193dp"
         android:layout_height="128dp"
         android:src="@drawable/store_orders"
@@ -67,6 +67,6 @@
         android:id="@+id/storeOrdersButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Store Orders"
+        android:text="@string/store_orders"
         android:translationX="50dp" />
 </LinearLayout>
