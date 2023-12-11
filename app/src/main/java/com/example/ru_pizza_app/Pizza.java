@@ -19,8 +19,23 @@ public abstract class Pizza {
     * @return a double representing the price of the pizza
     */
     public abstract double price();
+
+    /**
+    * This method is an abstract getter method to return the sauce of a pizza
+    * @return a String representing the sauce of the pizza
+    */
     public abstract String getSauce();
+
+    /**
+    * This method is an abstract getter method to return the name of a pizza
+    * @return a String representing the name of the pizza
+    */
     public abstract String getName();
+
+    /**
+    * This method lists the toppings of a pizza
+    * @return a String representing the toppings of the pizza
+    */
     public String getToppings() {
         StringBuilder toppingsString = new StringBuilder();
 
@@ -34,6 +49,11 @@ public abstract class Pizza {
 
         return toppingsString.toString();
     }
+
+    /**
+    * This method is a toString which highlights the details of the pizza
+    * @return a String representing the name of the pizza
+    */
     @Override
     public String toString() {
         StringBuilder pizzaDetails = new StringBuilder();
